@@ -1,0 +1,109 @@
+//Блок эффект на  24 часа
+
+.effect {
+  padding: 40px 0;
+  margin-bottom: 66px;
+  background-color: @white;
+  z-index: 10;
+
+  .mobile-only ({
+    display: none;
+  });
+
+  .tablet ({
+    display: flex;
+  });
+
+  .desktop ({
+    padding: 0 0 116px;
+    background-color: @very-light-gray;
+    margin-bottom: 47px;
+  });
+}
+
+.effect__wrap {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 39px;
+  margin-left: 0;
+
+  &::before {
+    content: "";
+    min-width: 238px;
+    min-height: 276px;
+    background-image: url("../img/timer.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .desktop ({
+    &::before {
+      width: 298px;
+      height: 345px;
+      left: 12px;
+      top: 128px;
+    }
+  });
+}
+
+.effect__inner-wrapper {
+  width: 50%;
+  margin-left: auto;
+  margin-top: 10px;
+
+  .desktop ({
+    width: 61%;
+  });
+}
+
+.effect__title {
+  font-size: 30px;
+
+  br {
+    .desktop ({
+      display: none;
+    });
+  }
+
+  .tablet ({
+    margin: 10px 0;
+  });
+
+  .desktop ({
+    margin: 40px 0 21px 4px;
+  });
+}
+
+.effect__text {
+  line-height: 1.7;
+  margin-top: 0;
+  margin-bottom: 12px;
+  padding-right: 5px;
+
+  .desktop ({
+    width: 92%;
+    font-size: 18px;
+    margin-left: 4px;
+    margin-bottom: 30px;
+  });
+
+  br {
+    .desktop ({
+      display: none;
+    });
+  }
+}
+
+.effect__link {
+  color: @crimson;
+
+  .desktop ({
+    font-size: 18px;
+    margin-left: 4px;
+  });
+}

@@ -1,0 +1,87 @@
+// Блок галерея
+
+.user-stories {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .tablet ({
+    margin-bottom: 43px;
+  });
+
+  .desktop ({
+    margin-bottom: 36px;
+  });
+}
+
+.user-stories__main-story {
+  width: 140px;
+  min-height: 36px;
+  font-size: 12px;
+  color: @white;
+  background-color: @crimson;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 8px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+
+  .tablet ({
+    top: 57px;
+  });
+
+  .desktop ({
+    top: 54px;
+    right: 31px;
+  });
+}
+
+.user-stories__header {
+  display: flex;
+  justify-content: center;
+  padding: 32px 14px 35px;
+
+  .tablet ({
+    padding-bottom: 58px;
+  });
+
+  .desktop ({
+    padding-bottom: 72px;
+  });
+}
+
+.user-stories__header-text {
+  text-align: center;
+  line-height: 2.2;
+
+  .tablet ({
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.6;
+  });
+
+  .desktop ({
+    max-width: 572px;
+  });
+}
+
+.user-stories__list {
+  .list-reset();
+
+  .tablet ({
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  });
+  .desktop ({
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 52px 20px;
+    margin: 0 10px;
+  });
+}
+
+.user-stories__item {
+  display: flex;
+  flex-direction: column;
+}

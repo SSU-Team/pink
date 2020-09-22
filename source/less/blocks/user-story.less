@@ -1,0 +1,127 @@
+// Карточки галереи
+
+.user-story {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  background-color: @very-light-gray;
+
+  .tablet ({
+    margin-bottom: 0;
+  });
+
+  &--best-panorama {
+    background: none;
+    margin-bottom: 22px;
+
+    .tablet ({
+      margin-bottom: 51px;
+    });
+  }
+}
+
+.user-story__wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 13px 7px 20px 15px;
+  margin-top: -2px;
+
+  .tablet ({
+    min-height: 152px;
+    padding: 17px 30px 27px;
+  });
+
+  &--best-panorama {
+    background-color: @very-light-gray;
+    .tablet ({
+      min-height: 90px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 17px 30px 6px;
+    });
+
+    .desktop ({
+      margin: 0 10px;
+    });
+  }
+}
+
+.user-story__title-time-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.user-story__title {
+  margin: 8px 5px 6px 0;
+}
+
+.user-story__text {
+  margin: 0 0 18px;
+  line-height: 1.7;
+}
+
+.user-story__text--best-panorama {
+  .tablet ({
+    order: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+  });
+}
+
+.user-story__link {
+  display: block;
+  width: 100%;
+}
+
+.user-story__link-img {
+  width: 100%;
+
+  &--best-panorama {
+    .tablet ({
+      min-height: 510px;
+    });
+
+    .desktop ({
+      min-height: 505px;
+    });
+  }
+}
+
+.user-story__like {
+  display: flex;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 1.2;
+  color: @crimson;
+  background: none;
+  border: none;
+  padding: 0;
+
+  .tablet ({
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  });
+
+  &--best-panorama {
+    .tablet({
+      justify-content: end
+    });
+  }
+}
+
+.user-story__icon {
+  fill: @crimson;
+  margin-right: 15px;
+
+  .tablet ({
+    margin-right: 0;
+    margin-left: 15px;
+  });
+}

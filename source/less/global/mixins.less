@@ -1,0 +1,48 @@
+// Примеси
+
+.list-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Vievport
+
+.mobile-only(@content) {
+  @media (max-width: 659px) {
+    @content();
+  }
+}
+
+.tablet(@content) {
+  @media (min-width: 660px) {
+    @content();
+  }
+}
+
+.desktop(@content) {
+  @media (min-width: 960px) {
+    @content();
+  }
+}
+
+.retina(@content) {
+  @media (min-resolution: 2dppx) {
+    @content();
+  }
+}
+
+// Стили для кнопки
+
+.button() {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-transform: uppercase;
+  background: @green-saturated;
+  color: @white;
+  border: 2px solid @green-saturated;
+  border-radius: 1px;
+  text-align: center;
+  padding: 17px 10px;
+}

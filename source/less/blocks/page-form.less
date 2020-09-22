@@ -1,0 +1,54 @@
+// Блок страницы с формой обертка
+
+.page-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 30px;
+  margin-bottom: 16px;
+
+  .tablet ({
+    padding-top: 8px;
+    margin-bottom: 56px;
+  });
+
+  .desktop ({
+    max-width: 960px;
+    margin: auto;
+    padding-top: 55px;
+    margin-bottom: 10px;
+  });
+}
+
+.page-form__wrap {
+  .desktop ({
+    padding: 10px 0;
+  });
+}
+
+.page-form__header-text {
+  text-align: center;
+  line-height: 2.2;
+  margin-bottom: 40px;
+
+  .tablet ({
+    font-size: 18px;
+    line-height: 1.6;
+    width: 490px;
+    margin: 40px auto 30px;
+  });
+
+  .desktop ({
+    width: 760px;
+    margin-bottom: 53px;
+    line-height: 1.5;
+  });
+}
+
+.page-form__mobile-text {
+  display: none;
+
+  .tablet ({
+    display: inline-block;
+  });
+}

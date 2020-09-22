@@ -1,0 +1,93 @@
+// Секция скачать приложение
+
+.download-application {
+  background-color: @dark-blue-blue;
+  padding: 28px 0;
+
+  .tablet ({
+    position: relative;
+    bottom: 409px;
+    background: none;
+    margin-bottom: -276px;
+  });
+
+  .desktop ({
+    bottom: 459px;
+    margin-bottom: -304px;
+  });
+}
+
+.download-application__wrap {
+  .tablet ({
+    width: 300px;
+  });
+
+  .desktop ({
+    width: 31%;
+    margin-left: 6px;
+  });
+}
+
+.download-application__link {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: @white;
+  text-decoration: none;
+  padding: 16px 16px;
+  border: 3px solid @white;
+  border-radius: 29px;
+  display: block;
+  text-align: center;
+
+  &:hover {
+    background-color: @white;
+    color: @crimson;
+  }
+
+  &:active {
+    color: rgba(@crimson, 0.3);
+  }
+
+  .desktop ({
+    font-size: 21px;
+    padding: 15px 15px 15px 27px;
+  });
+}
+
+.download-application__link-icon {
+  display: block;
+  background-repeat: no-repeat;
+}
+
+.download-application__list {
+  .list-reset();
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 33px 0 17px;
+
+  .tablet ({
+    margin-top: 45px;
+    margin-bottom: 30px;
+  });
+
+  .desktop ({
+    margin: 68px 8px 48px 18px;
+  });
+}
+
+.download-application__small {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.6;
+  color: @white;
+  text-align: center;
+  margin-bottom: 5px;
+
+  .tablet ({
+    font-size: 18px;
+    line-height: 1.3;
+  });
+}
